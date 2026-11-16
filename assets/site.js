@@ -21,6 +21,18 @@ if (menu) {
 }
 
 const params = new URLSearchParams(location.search);
+const stickyCta = document.querySelector('.sticky-cta');
+if (stickyCta && 'IntersectionObserver' in window) {
+  const hero = document.querySelector('.hero, .text-hero');
+  const stops = [...document.querySelectorAll('#contact, .page-cta, .footer')];
+  const visible = new Set();
+  const update = () => { stickyCta.hidden = visible.size > 0; };
+  const watch = new IntersectionObserver(entries => {
+    entries.forEach(entry => (entry.isIntersecting ? visible.add(entry.target) : visible.delete(entry.target)));
+    update();
+  });
+  [hero, ...stops].filter(Boolean).forEach(element => watch.observe(element));
+}
 let activeComparison = null;
 let comparisonPinned = false;
 function closeComparison() {

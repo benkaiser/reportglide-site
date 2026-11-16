@@ -281,3 +281,95 @@ th:nth-child(2) { width: 24%; }
   .boundary-section .boundary-flow > span:not(.flow-arrow) { width: 100%; flex: auto; }
   .boundary-section .flow-arrow { transform: rotate(90deg); }
 }
+.sticky-cta { display: none; }
+@media (max-width: 760px) {
+  .nav { min-height: 72px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .menu-toggle { min-height: 44px; padding: 0 18px; font-size: 15px; }
+  .navlinks { padding-top: 6px; gap: 0; flex-direction: column; align-items: stretch; }
+  .navlinks a:not(.button) { padding: 15px 2px; font-size: 17px; border-top: 1px solid var(--line); }
+  .navlinks .button { margin: 10px 0 8px; padding: 15px; font-size: 16px; }
+  .sticky-cta:not([hidden]) { display: flex; align-items: center; justify-content: center; gap: 12px; position: fixed; z-index: 5; left: 14px; right: 14px; bottom: calc(14px + env(safe-area-inset-bottom)); padding: 15px; border-radius: 8px; background: var(--blue); color: #fff; font-size: 16px; font-weight: 600; box-shadow: 0 8px 24px #1d304b40; }
+  body { padding-bottom: 76px; }
+}
+@media (max-width: 620px) {
+  body { font-size: 16px; }
+  .container { padding: 0 20px; }
+  .logo { font-size: 26px; }
+  .label { font-size: 12px; }
+  h1, .hero h1, .text-hero h1 { font-size: 38px; line-height: 1.12; letter-spacing: -1.2px; max-width: none; }
+  h2, .section-top h2, .sovereignty h2 { font-size: 29px; line-height: 1.2; letter-spacing: -.8px; margin: 10px 0 16px; }
+  h3 { font-size: 18px; }
+  p, .hero p, .sovereignty p, .pricing-section > div > p, .people-copy p, .contact-intro p, .three-columns p, .split-copy p, .page-cta p, .boundary-section p, .comparison-section > p, .faq details p, .example-grid p, .section-top p { font-size: 16px; line-height: 1.65; }
+  .small, .hero .small, .comparison-section > p.small, .sovereign-card .small, .people-copy .small { font-size: 13px; }
+  .button { padding: 15px 20px; font-size: 16px; }
+  .hero { padding: 24px 0 8px; gap: 28px; }
+  .hero .button, .text-hero .button { width: 100%; }
+  .hero-photo { height: 360px; margin: 0 -20px; }
+  .hero-photo img { border-radius: 0 0 0 56px; }
+  .photo-caption { left: 20px; right: 20px; bottom: 18px; font-size: 14px; }
+  .photo-caption span { font-size: 13px; }
+  .facts { flex-direction: column; gap: 14px; padding: 22px 0; font-size: 15px; border-top: 0; }
+  .facts span, .facts span:last-child { width: auto; }
+  .facts svg { width: 22px; height: 22px; }
+  .sovereignty { padding-top: 48px; gap: 26px; }
+  .text-link { font-size: 16px; display: inline-block; padding: 8px 0; }
+  .sovereign-card { padding: 22px 18px; }
+  .boundary-label { font-size: 13px; }
+  .boundary-flow { flex-direction: column; align-items: stretch; gap: 4px; margin: 20px 0; }
+  .boundary-flow > span:not(.flow-arrow) { padding: 14px; font-size: 15px; }
+  .flow-arrow { transform: rotate(90deg); text-align: center; width: 100%; }
+  .workflow { margin: 48px -20px; padding: 36px 20px; border-radius: 0; border-left: 0; border-right: 0; }
+  .workflow-steps span { font-size: 14px; }
+  .workflow-steps p { font-size: 15px; }
+  .people { margin: 0 -20px 48px; gap: 26px; }
+  .people-photo { height: 280px; border-radius: 0; }
+  .people-copy { padding: 0 20px; }
+  .profession-links { flex-direction: column; }
+  .profession-links a { font-size: 16px; padding: 15px 16px; display: flex; justify-content: space-between; }
+  .pricing-section { padding: 44px 0; }
+  .price-heading p { font-size: 14px; }
+  .price-card > p.allowance-label { font-size: 13px; }
+  .report-estimates div span { font-size: 15px; }
+  .report-estimates strong { font-size: 24px; }
+  .estimate-or { font-size: 12px; }
+  .price-card > p.metered-note { font-size: 13px; }
+  .contact-section { padding: 44px 0 56px; }
+  label { font-size: 14px; margin-bottom: 8px; }
+  input, select { min-height: 50px; }
+  .contact-panel button[type="submit"] { width: 100%; }
+  .footer { padding: 32px 0 40px; font-size: 14px; }
+  .footer p, .footer-abn { font-size: 13px; }
+  .footer-links { flex-direction: column; gap: 4px; }
+  .footer-links a { padding: 8px 0; }
+  .text-hero { padding: 36px 0 32px; }
+  .page-section { padding: 40px 0; }
+  .example-section { margin: 8px -20px 40px; border-radius: 0; border-left: 0; border-right: 0; padding: 28px 20px; }
+  .example-grid h3 { font-size: 13px; }
+  .page-cta { padding: 28px 22px; }
+  .page-cta h2 { font-size: 26px; }
+  .page-cta .button { width: 100%; }
+  .faq summary { font-size: 17px; padding: 6px 24px 6px 0; }
+  .boundary-section { padding: 24px 18px; }
+  .comparison-section { margin: 0 -20px 40px; padding: 30px 20px; border-radius: 0; border-left: 0; border-right: 0; }
+  .comparison-table, .comparison-table tbody, .comparison-table tr, .comparison-table th, .comparison-table td { display: block; }
+  .comparison-table thead { display: none; }
+  .comparison-table caption { display: block; font-size: 13px; padding: 4px 0 14px; }
+  .comparison-table tbody { display: grid; gap: 14px; }
+  .comparison-table tr { display: grid; grid-template-columns: repeat(3, 1fr); background: #fff; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .comparison-table tbody th:first-child { width: auto; grid-column: 1 / -1; padding: 14px 16px; font-size: 16px; border: 0; border-bottom: 1px solid var(--line); background: #edf3fd; }
+  .comparison-table td { border: 0; border-left: 1px solid var(--line); padding: 12px 4px 10px; }
+  .comparison-table td:nth-child(2) { border-left: 0; }
+  .comparison-table tr > :nth-child(2) { background: #f0f8f3; }
+  .comparison-table td::before { content: attr(data-label); display: block; text-align: center; font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+  .comparison-status { font-size: 13px; padding: 8px 0; min-height: 44px; }
+  .status-mark { width: 34px; height: 34px; }
+  .comparison-help::after { content: ""; }
+  .comparison-tooltip { font-size: 14px; }
+  .comparison-sources { font-size: 14px; }
+  .comparison-sources summary { padding: 8px 0; }
+}
+@media (max-width: 360px) {
+  h1, .hero h1, .text-hero h1 { font-size: 33px; }
+  h2, .section-top h2, .sovereignty h2 { font-size: 26px; }
+}
+@media (max-width: 900px) { .contact-intro h2 br { display: none; } }
